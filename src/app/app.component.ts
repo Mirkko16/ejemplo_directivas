@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ejemplos_directivas';
+  listadoEstudiantes:any[]=[
+    {nombre:'Mirko', estado:'Regular'},
+    {nombre:'Matias', estado:'Aprobo'},
+    {nombre:'Luciano', estado:'Promocion'},
+    {nombre:'Gustavo', estado:'Recursante'},
+  ]
+
+  mostrar:boolean=true;
+  mostrarNomostrar(){
+    this.mostrar=!this.mostrar;
+  }
 }
